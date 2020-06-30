@@ -16,10 +16,23 @@ Run "bundle" to install the gems (Sinatra, Capybara, Ruby, Rack).
 
 ![Bookmark Manager domain model](/Users/student/Downloads/Untitled_Diagram.drawio)
 
+### To run the Bookmark Manager app:
+
+```
 rackup -p 3000
 ```
 
-To view bookmarks, navigate to `localhost:3000/bookmarks`
+To view bookmarks, navigate to `localhost:3000/bookmarks`.
+
+### To set up the database
+
+Connect to `psql` and create the `bookmark_manager` database:
+
+```
+CREATE DATABASE bookmark_manager;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
 
 ### To run tests:
 
