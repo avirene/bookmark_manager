@@ -1,9 +1,11 @@
 require "pg"
 
-feature "Visiting the Bookmark Manager" do
-  scenario "Visiting the index page" do
+feature "Viewing bookmarks" do
+  feature "visiting the home page" do
+    scenario "the page title is visible" do
     visit("/")
     expect(page).to have_content "Bookmark Manager"
+    end
   end
 end
 
@@ -20,15 +22,6 @@ feature "Viewing bookmarks" do
     expect(page).to have_content "http://www.makersacademy.com"
     expect(page).to have_content "http://www.destroyallsoftware.com"
     expect(page).to have_content "http://www.google.com"
-  end
-end
-
-feature "Submitting a new bookmark" do
-  scenario "Submit a new bookmark" do
-    visit("/bookmarks/new")
-    fill_in("url", with: "https://www.macmillandictionary.com/")
-    click_button "Submit"
-    expect(page).to have_content "https://www.macmillandictionary.com/"
   end
 end
 
