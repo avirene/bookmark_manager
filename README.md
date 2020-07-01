@@ -14,7 +14,7 @@ Functionality:
 
 Run "bundle" to install the gems (Sinatra, Capybara, Ruby, Rack).
 
-![Bookmark Manager domain model](./public/images/Untitled_Diagram.drawio)
+![Bookmark Manager domain model](./public/images/diagram.png)
 
 ### To run the Bookmark Manager app:
 
