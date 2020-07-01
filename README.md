@@ -8,6 +8,12 @@ So that I can quickly access my favourite web pages
 I would like to be able to view my bookmark list.
 ```
 
+```
+As a user
+So I can store bookmarks for later retrieval
+I want to add a bookmark to Bookmark Manager.
+```
+
 ## Domain Model
 
 ![Bookmark Manager domain model](./public/images/diagram.png)
